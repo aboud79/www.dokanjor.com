@@ -1,0 +1,134 @@
+{
+    "exportFormatVersion": 2,
+    "exportTime": "2023-09-07 03:34:45",
+    "containerVersion": {
+        "path": "accounts/6080740432/containers/137035805/versions/0",
+        "accountId": "6080740432",
+        "containerId": "137035805",
+        "containerVersionId": "0",
+        "container": {
+            "path": "accounts/6080740432/containers/137035805",
+            "accountId": "6080740432",
+            "containerId": "137035805",
+            "name": "دكان الصور",
+            "publicId": "GTM-MP3X3VKX",
+            "usageContext": [
+                "WEB"
+            ],
+            "fingerprint": "1690436653950",
+            "tagManagerUrl": "https://tagmanager.google.com/#/container/accounts/6080740432/containers/137035805/workspaces?apiLink=container",
+            "features": {
+                "supportUserPermissions": true,
+                "supportEnvironments": true,
+                "supportWorkspaces": true,
+                "supportGtagConfigs": false,
+                "supportBuiltInVariables": true,
+                "supportClients": false,
+                "supportFolders": true,
+                "supportTags": true,
+                "supportTemplates": true,
+                "supportTriggers": true,
+                "supportVariables": true,
+                "supportVersions": true,
+                "supportZones": true,
+                "supportTransformations": false
+            },
+            "tagIds": [
+                "GTM-MP3X3VKX"
+            ]
+        },
+        "tag": [
+            {
+                "accountId": "6080740432",
+                "containerId": "137035805",
+                "tagId": "3",
+                "name": "Google Analytics GA4 Configuration",
+                "type": "gaawc",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "serverContainerUrl",
+                        "value": "{{Page Hostname}}"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enhancedUserId",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "sendPageView",
+                        "value": "true"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableSendToServerContainer",
+                        "value": "true"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "measurementId",
+                        "value": "{{Page URL}}"
+                    }
+                ],
+                "fingerprint": "1690445731204",
+                "firingTriggerId": [
+                    "2147479553",
+                    "2147479572",
+                    "2147479573"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            }
+        ],
+        "trigger": [
+            {
+                "accountId": "6080740432",
+                "containerId": "137035805",
+                "triggerId": "5",
+                "name": "All Elements",
+                "type": "CLICK",
+                "fingerprint": "1690475680609"
+            }
+        ],
+        "builtInVariable": [
+            {
+                "accountId": "6080740432",
+                "containerId": "137035805",
+                "type": "PAGE_URL",
+                "name": "Page URL"
+            },
+            {
+                "accountId": "6080740432",
+                "containerId": "137035805",
+                "type": "PAGE_HOSTNAME",
+                "name": "Page Hostname"
+            },
+            {
+                "accountId": "6080740432",
+                "containerId": "137035805",
+                "type": "PAGE_PATH",
+                "name": "Page Path"
+            },
+            {
+                "accountId": "6080740432",
+                "containerId": "137035805",
+                "type": "REFERRER",
+                "name": "Referrer"
+            },
+            {
+                "accountId": "6080740432",
+                "containerId": "137035805",
+                "type": "EVENT",
+                "name": "Event"
+            }
+        ],
+        "fingerprint": "1694057685303",
+        "tagManagerUrl": "https://tagmanager.google.com/#/versions/accounts/6080740432/containers/137035805/versions/0?apiLink=version"
+    }
+}

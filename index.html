@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+
+<!-- <html lang="en">  
+
+   <head>
+ <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-95TJC8Y5TY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-95TJC8Y5TY');
+</script>
+
+ 
+      <meta charset="utf-8" />
+      <title>3D T-shirt creator — make your layout design & mockup</title>
+      <meta name="description" content="Mockup editor lets you T-shirt design and watch in real time"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="/content/css/reset.css">
+      <link rel="stylesheet" href="/content/css/styles.css?22">
+	  <link rel="stylesheet" href="/plugins/fonts/css/fonts.css">
+	  <link rel="manifest" href="/manifest.json">
+	  <link rel="stylesheet" href="/plugins/js/fancybox/jquery.fancybox.css">
+	  <link rel="icon" href="/content/img/ui/favicon.ico" type="image/x-icon">
+	  <link rel="apple-touch-icon" href="/content/img/ui/logo_76.png" sizes="76x76">
+	  <link rel="apple-touch-icon" href="/content/img/ui/logo_120.png" sizes="120x120">
+	  <link rel="apple-touch-icon" href="/content/img/ui/logo_152.png" sizes="152x152">
+	  <link rel="apple-touch-icon" href="/content/img/ui/logo_180.png" sizes="180x180">
+
+	  		   <link rel="canonical" href="https://dokanjor.com">
+		  	 
+   </head>
+   <body>
+      
+      <div id="page">
+         <div id="preview3d" ></div>
+         <div id="editor" >
+            <div class="content">
+               <h1>3D T-shirt mockup designer</h1>
+
+<p>
+<a href="https://www.dokanjor.com/"  rel="nofollow" id="dokanjor" class="dokanjor" ><svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="12" height="10" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"><path d="M6 10C2.45 8.23.28 5.8.28 2.9.28 1.3 1.57 0 3.17 0 4.58 0 5.3.68 6 2.03 6.7.68 7.42 0 8.83 0c1.6 0 2.89 1.3 2.89 2.9 0 2.9-2.17 5.33-5.72 7.1z" fill="#fff" fill-rule="nonzero"/></svg> Become a Patron!</a>
+</p>
+
+<div id="modes_area">
+<p>Colors:</p>
+               <div id="basic_modes" >
+				   
+				   <div id="pick_colors">
+				   
+					  <div class="group_color" >
+					  <div class="pick vinous" data-color="7A0205" ></div>
+					  <div class="pick red" data-color="DF1212" ></div>
+					  <div class="pick orange" data-color="F86900" ></div>
+					  <div class="pick pink" data-color="FFC2C2" ></div>
+					  <div class="pick yellow" data-color="EDD900" ></div>
+					  <div class="pick lime" data-color="94C808" ></div>
+					  </div>
+					  
+					  <div class="group_color" >
+					  <div class="pick blue" data-color="1D85D0" ></div>
+					  <div class="pick violet" data-color="5878DB" ></div>
+					  <div class="pick green" data-color="075103" ></div>
+					  <div class="pick navy" data-color="270E68" ></div>
+					  <div class="pick gray" data-color="969696" ></div>
+					  <div class="pick black" data-color="000000" ></div>
+					  </div>
+				   </div>
+			   
+
+				   <div class="blockRow">
+					   <div>
+					   <button id="show_extended_modes"  class="buttonImageText" ><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"><path d="M4.83 9.2h2.19a2.802 2.802 0 012.59-1.74c1.17 0 2.17.72 2.59 1.74h12.97v2.11H12.2a2.802 2.802 0 01-2.59 1.74c-1.17 0-2.17-.72-2.59-1.74H4.83V9.2zm15.56 7.75c1.17 0 2.17.72 2.59 1.74h2.19v2.11h-2.19a2.802 2.802 0 01-2.59 1.74c-1.17 0-2.17-.72-2.58-1.74H4.83v-2.11h12.98a2.778 2.778 0 012.58-1.74z" fill="#fff" fill-rule="nonzero"/></svg><span>Customize colors</span>
+					   </button>
+					   </div>
+				   </div>				  
+               </div>
+			   
+					<div id="extended_modes" >
+				     <div class="extColor" >
+					 
+                      <span id="colorfor_collar" name="colorfor_collar" data-jscolor="{smartPosition:false, mode:'HVS', borderRadius:'0',valueElement:'#controlObjectColor_collar', hash:false}"  ></span>
+                      # <input id="controlObjectColor_collar" class="color_hex_value" autocomplete="off"> Collar                     </div>				    
+					 <div class="extColor" >
+                      <span id="colorfor_cuff" name="colorfor_cuff" data-jscolor="{smartPosition:false, mode:'HVS', borderRadius:'0',valueElement:'#controlObjectColor_cuff', hash:false}"  ></span>
+                      # <input id="controlObjectColor_cuff" class="color_hex_value" autocomplete="off"> Cuff                     </div>					
+					 <div class="extColor" >
+                      <span id="colorfor_hem" name="colorfor_hem" data-jscolor="{smartPosition:false, mode:'HVS', borderRadius:'0',valueElement:'#controlObjectColor_hem', hash:false}"  ></span>
+                      # <input id="controlObjectColor_hem" class="color_hex_value" autocomplete="off"> Bottom hem                     </div>	
+					 <div class="extColor" >
+                      <span id="colorfor_print" name="colorfor_print" data-jscolor="{smartPosition:false, mode:'HVS', borderRadius:'0',valueElement:'#controlObjectColor_print', hash:false}"  ></span>
+                      # <input id="controlObjectColor_print" class="color_hex_value" autocomplete="off"> Background                     </div>					 
+					 <div class="extColor" >
+                      <span id="colorfor_sleeves" name="colorfor_sleeves" data-jscolor="{smartPosition:false, mode:'HVS', borderRadius:'0',valueElement:'#controlObjectColor_sleeves', hash:false}"  ></span>
+                      # <input id="controlObjectColor_sleeves" class="color_hex_value" autocomplete="off"> Sleeves                     </div>						 
+					 
+					 <div class="extColor" >
+                      <span id="colorfor_inner" name="colorfor_inner" data-jscolor="{smartPosition:false, mode:'HVS', borderRadius:'0',valueElement:'#controlObjectColor_inner', hash:false}"  ></span>
+                      # <input id="controlObjectColor_inner" class="color_hex_value" autocomplete="off"> Inner                     </div>						 
+
+					 
+					  <div class="blockRow">
+						  <div>
+						  <button id="show_basic_modes"  class="buttonImageText"  ><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"><path d="M5.77 6.11h4.33v4.08H5.77V6.11zm7.06 13.69h4.34v4.09h-4.34V19.8zm7.07 0h4.33v4.09H19.9V19.8zm-14.13 0h4.33v4.09H5.77V19.8zm7.06-6.84h4.34v4.08h-4.34v-4.08zm7.07 0h4.33v4.08H19.9v-4.08zm-14.13 0h4.33v4.08H5.77v-4.08zm7.06-6.85h4.34v4.08h-4.34V6.11zm7.07 0h4.33v4.08H19.9V6.11z" fill="#fff"/></svg><span>Basic colors</span></button>
+						  </div>
+					  </div>	
+					 
+					 </div>
+</div>						   
+					
+				  <div class="group_checkbox">
+					  <div class="check_area">					
+						  <input class="check_mode"  id="collar_color" name="collar_color" type="checkbox" value="collar_color" checked>
+						  <label for="collar_color" onclick="">Collar</label>
+						  <br>				  
+						  
+						  <input class="check_mode"  id="cuff_color" name="cuff_color" type="checkbox" value="cuff_color" checked>
+						  <label for="cuff_color" onclick="">Cuff</label>
+						  <br>				 
+
+						  <input class="check_mode"  id="hem_color" name="hem_color" type="checkbox" value="hem_color" checked>
+						  <label for="hem_color" onclick="">Bottom hem</label>
+						  <br>	 						 
+
+							  <input class="check_mode"  id="sleeves_color" name="sleeves_color" type="checkbox" value="sleeves_color" >
+							  <label for="sleeves_color" onclick="">Sleeves</label>
+							  <br>
+						  
+						  <input class="check_mode"  id="inner_color" name="inner_color" type="checkbox" value="inner_color" >
+						  <label for="inner_color" onclick="">Inner</label>
+						  <br>	 
+						  
+						  <input class="grid_mode"  id="show_grid" name="show_grid" type="checkbox" value="show_grid" checked >
+						  <label for="show_grid" onclick="">Grid</label>
+					  </div>
+
+					  <div class="check_area">	
+					  
+						Animation speed:<br>
+						<input style="width:100%" id="speed" type="range" value="4" min="0" max="100" >		
+		  
+						  <input class="animate_mode"  id="run_animate" name="run_animate" type="checkbox" value="run_animate" checked >
+						  <label for="run_animate" onclick="">Animate</label>
+						  <br>	
+
+						  <input class="reverse_mode"  id="reverse_animate" name="reverse_animate" type="checkbox" value="reverse_animate"  >
+						  <label for="reverse_animate" onclick="">Reverse</label>
+						  <br>	
+						  
+		  
+
+
+					
+						  <input class="environment_mode"  id="show_env" name="show_env" type="checkbox" value="show_env" >
+						  <label for="show_env" onclick="">Environment</label>
+						  <br>	
+					</div>
+				</div>
+
+
+
+
+
+
+
+
+
+
+
+					<p>Static angles:</p>
+					 <div class="blockRow">
+					 
+
+					 
+					 
+						 <div class="block6Buttons">
+
+						   <button id="controlSetAngle0"><svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="30" height="30" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"><path d="M18.14 15.01c0 2.08-.25 3.58-.75 4.5-.5.93-1.31 1.39-2.41 1.39-1.11 0-1.91-.47-2.39-1.4-.48-.93-.72-2.42-.72-4.49 0-2.07.25-3.57.76-4.5.5-.94 1.3-1.41 2.38-1.41 1.1 0 1.9.46 2.39 1.37.49.92.74 2.43.74 4.54zm-4.14 0c0 1.6.07 2.68.2 3.24.14.56.4.83.79.83.27 0 .47-.12.61-.36s.25-.64.31-1.19c.06-.56.09-1.4.09-2.52 0-1.58-.07-2.66-.22-3.23-.14-.58-.4-.86-.79-.86s-.65.28-.79.85c-.13.58-.2 1.65-.2 3.24z" fill="#fff" fill-rule="nonzero"/></svg></button>	
+						   
+
+						   <button id="controlSetAngle45"><svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="30" height="30" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"><path d="M14.97 18.24h-1.16v2.41H11.8v-2.41H8.06v-1.73l3.47-7.32h2.28v7.29h1.16v1.76zm-3.17-1.76v-2.42l.04-1.06.05-1.02h-.06c-.18.57-.38 1.08-.59 1.54l-1.38 2.96h1.94zm7.32-3c.86 0 1.55.3 2.05.9.52.6.77 1.42.77 2.47 0 1.25-.32 2.22-.95 2.92-.64.69-1.52 1.04-2.65 1.04-1 0-1.81-.19-2.43-.57v-2c.26.2.61.37 1.03.52.42.14.81.22 1.17.22 1.12 0 1.68-.65 1.68-1.96 0-1.22-.54-1.83-1.64-1.83-.43 0-.89.09-1.37.25l-.69-.5.35-5.75h4.89v1.91h-3.07l-.15 2.47c.29-.06.63-.09 1.01-.09z" fill="#fff" fill-rule="nonzero"/></svg></button>		
+
+						   
+				  
+
+						   <button id="controlSetAngle120"><svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="30" height="30" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"><path d="M9.47 20.74H7.38v-6.73c0-.73.03-1.57.1-2.52-.03.05-.17.21-.4.48s-.68.74-1.36 1.43l-1.19-1.3 3.05-2.82h1.89v11.46zm8.44 0h-6.14v-1.59l2.04-2.89c.56-.79.94-1.38 1.15-1.76.21-.39.36-.76.46-1.11.1-.35.15-.72.15-1.09 0-.44-.1-.77-.29-.99a.984.984 0 0 0-.77-.33c-.27 0-.53.07-.77.22s-.54.41-.88.79l-1.19-1.25c.55-.62 1.06-1.05 1.53-1.28a3.4 3.4 0 0 1 1.53-.34c.92 0 1.64.27 2.16.81.52.54.78 1.3.78 2.26 0 .44-.04.86-.14 1.25-.09.39-.24.79-.43 1.18-.19.4-.43.81-.71 1.23-.29.43-1.03 1.4-2.23 2.93v.06h3.75v1.9zm7.56-5.73c0 2.08-.25 3.58-.75 4.5-.5.93-1.3 1.39-2.41 1.39s-1.9-.47-2.39-1.4c-.48-.93-.72-2.42-.72-4.49 0-2.07.25-3.57.76-4.5.51-.94 1.3-1.41 2.38-1.41 1.1 0 1.9.46 2.39 1.37.49.92.74 2.43.74 4.54zm-4.14 0c0 1.6.07 2.68.21 3.24.14.56.4.83.79.83.26 0 .46-.12.6-.36.15-.24.25-.64.31-1.19.07-.56.1-1.4.1-2.52 0-1.58-.08-2.66-.22-3.23-.15-.58-.41-.86-.79-.86-.39 0-.65.28-.79.85-.14.58-.21 1.65-.21 3.24z" fill="#fff" fill-rule="nonzero"/></svg></button>
+
+
+						   <button id="controlSetAngle180"><svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="30" height="30" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"><path d="M9.47 20.74H7.38v-6.73c0-.73.03-1.57.1-2.52-.03.05-.17.21-.4.48s-.68.74-1.36 1.43l-1.19-1.3 3.05-2.82h1.89v11.46zm5.44-11.61c.9 0 1.61.26 2.14.76.54.51.8 1.2.8 2.07 0 .54-.12 1.03-.37 1.46-.25.44-.67.86-1.27 1.25.67.48 1.15.96 1.43 1.47.28.49.42 1.04.42 1.63 0 .94-.28 1.69-.86 2.26-.57.58-1.33.87-2.29.87-.98 0-1.76-.27-2.32-.8-.55-.53-.84-1.29-.84-2.27 0-.66.14-1.24.42-1.74.28-.51.72-.95 1.3-1.33-.54-.43-.93-.86-1.16-1.31a3.18 3.18 0 0 1-.35-1.49c0-.85.27-1.54.82-2.06.55-.51 1.27-.77 2.13-.77zm-1.13 8.59c0 .46.09.83.28 1.1.19.27.47.41.82.41.39 0 .68-.14.87-.41.19-.27.28-.64.28-1.1 0-.33-.07-.64-.22-.93-.15-.29-.45-.63-.88-1.01l-.11-.11c-.34.25-.6.53-.78.85-.18.33-.26.73-.26 1.2zm1.12-6.93c-.3 0-.52.11-.68.32-.15.22-.22.53-.22.93 0 .34.06.65.18.9.13.26.37.53.73.82.35-.27.58-.54.71-.8.13-.27.19-.58.19-.92 0-.83-.3-1.25-.91-1.25zm10.57 4.22c0 2.08-.25 3.58-.75 4.5-.5.93-1.3 1.39-2.41 1.39s-1.9-.47-2.39-1.4c-.48-.93-.72-2.42-.72-4.49 0-2.07.25-3.57.76-4.5.51-.94 1.3-1.41 2.38-1.41 1.1 0 1.9.46 2.39 1.37.49.92.74 2.43.74 4.54zm-4.14 0c0 1.6.07 2.68.21 3.24.14.56.4.83.79.83.26 0 .46-.12.6-.36.15-.24.25-.64.31-1.19.07-.56.1-1.4.1-2.52 0-1.58-.08-2.66-.22-3.23-.15-.58-.41-.86-.79-.86-.39 0-.65.28-.79.85-.14.58-.21 1.65-.21 3.24z" fill="#fff" fill-rule="nonzero"/></svg></button>
+						   
+						   
+						   <button id="controlSetAngle240"><svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="30" height="30" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"><path d="M10.63 20.74H4.49v-1.59l2.04-2.89c.56-.79.94-1.38 1.15-1.76.21-.39.36-.76.46-1.11.1-.35.15-.72.15-1.09 0-.44-.1-.77-.3-.99-.19-.22-.44-.33-.76-.33-.28 0-.53.07-.77.22s-.54.41-.88.79l-1.19-1.25c.55-.62 1.05-1.05 1.52-1.28.48-.23.98-.34 1.53-.34.93 0 1.65.27 2.17.81s.78 1.3.78 2.26c0 .44-.05.86-.14 1.25-.09.39-.24.79-.43 1.18-.19.4-.43.81-.71 1.23-.29.43-1.03 1.4-2.23 2.93v.06h3.75v1.9zm7.9-2.41h-1.16v2.41h-2.01v-2.41h-3.73V16.6l3.46-7.32h2.28v7.28h1.16v1.77zm-3.17-1.77v-2.41l.05-1.06.05-1.02h-.06c-.19.57-.39 1.08-.6 1.54l-1.38 2.95h1.94zm10.25-1.55c0 2.08-.24 3.58-.74 4.5-.5.93-1.31 1.39-2.41 1.39-1.11 0-1.91-.47-2.39-1.4-.48-.93-.73-2.42-.73-4.49 0-2.07.26-3.57.76-4.5.51-.94 1.31-1.41 2.39-1.41 1.1 0 1.9.46 2.39 1.37.49.92.73 2.43.73 4.54zm-4.13 0c0 1.6.07 2.68.2 3.24.14.56.4.83.79.83.26 0 .47-.12.61-.36s.25-.64.31-1.19c.06-.56.09-1.4.09-2.52 0-1.58-.07-2.66-.22-3.23-.14-.58-.41-.86-.79-.86-.39 0-.65.28-.79.85-.13.58-.2 1.65-.2 3.24z" fill="#fff" fill-rule="nonzero"/></svg></button>
+						   
+						   
+						   <button id="controlSetAngle315"><svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="30" height="30" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"><path d="M10.45 11.85c0 .72-.18 1.33-.53 1.82-.36.48-.86.82-1.51 1.01v.06c.73.12 1.28.4 1.68.85.39.45.59 1.06.59 1.83 0 1.06-.33 1.9-.98 2.53-.66.63-1.56.94-2.7.94-1.01 0-1.86-.18-2.55-.54v-1.92c.34.21.72.38 1.12.5.4.12.79.18 1.16.18.61 0 1.06-.14 1.37-.42.31-.28.46-.72.46-1.33 0-1.15-.7-1.72-2.11-1.72h-.64v-1.59h.61c.63 0 1.1-.14 1.43-.44.34-.29.5-.73.5-1.31 0-.45-.1-.8-.32-1.03-.21-.23-.51-.35-.89-.35-.59 0-1.17.26-1.73.76l-.96-1.41c.77-.78 1.75-1.16 2.92-1.16.97 0 1.72.24 2.27.73.54.49.81 1.16.81 2.01zm6.65 8.88H15v-6.72c0-.74.03-1.58.11-2.53-.04.05-.18.21-.41.48-.23.27-.68.74-1.36 1.43l-1.19-1.3 3.05-2.82h1.9v11.46zm5.63-7.17c.86 0 1.55.3 2.06.9.51.6.76 1.42.76 2.47 0 1.25-.32 2.22-.95 2.92-.64.69-1.52 1.04-2.65 1.04-1 0-1.81-.19-2.43-.57v-2c.26.2.61.37 1.03.52.42.15.81.22 1.17.22 1.12 0 1.68-.65 1.68-1.96 0-1.22-.54-1.83-1.63-1.83-.44 0-.9.09-1.38.25l-.69-.5.35-5.75h4.89v1.91h-3.06l-.16 2.47c.29-.06.63-.09 1.01-.09z" fill="#fff" fill-rule="nonzero"/></svg></button>	
+
+
+						   
+						 </div>		
+
+					<div>
+						<button id="controlShowAngle" class="buttonImageText"><svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="30" height="30" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"><path d="M24.56 8.69c-.69-.45-1.33-.76-2.09-1.08l-.8 1.97c.62.26 1.13.51 1.69.87l1.2-1.76zm-10.59 3.29 5.92 5.92-5.92 5.92-1.5-1.5 3.43-3.43-.26.01-1.36.04c-3.39 0-6.47-.63-8.72-1.65-2.51-1.14-4.06-2.8-4.06-4.73 0-.65.18-1.27.52-1.86.32-.56.79-1.08 1.36-1.55l1.34 1.64c-.38.31-.68.64-.86.96-.15.27-.23.54-.23.81 0 1.01 1.07 2.01 2.8 2.79 1.99.91 4.76 1.46 7.85 1.46l1.25-.02.23-.02-3.29-3.29 1.5-1.5zm6.34-5.07c-.73-.16-1.44-.35-2.19-.44l-.3 2.1c.69.1 1.31.26 1.98.4l.51-2.06zm-4.39-.67c-.68-.04-1.54-.09-2.21-.05l.05 2.13c.65-.04 1.38.02 2.03.04l.13-2.12zm-4.42.09c-.69.07-1.54.18-2.21.34l.44 2.08c.66-.13 1.33-.24 2-.3l-.23-2.12zm-4.38.91c-.72.24-1.44.51-2.12.87L5.98 10c.56-.3 1.2-.54 1.81-.74l-.67-2.02z" fill="#fff" fill-rule="nonzero"/></svg><span>Custom angle...</span></button>
+					 </div>
+					 
+						 
+					 </div>	
+					 
+					 
+					 
+					 
+					 
+					 
+					 
+					 
+					 
+					 
+					 
+					 
+					 
+
+
+					<p>
+                      <span id="colorfor_scene" name="colorfor_scene" data-jscolor="{smartPosition:false, mode:'HVS', borderRadius:'0',valueElement:'#controlObjectColor_scene', hash:false}"  ></span>
+                      # <input id="controlObjectColor_scene" class="color_hex_value" autocomplete="off"> Scene background					</p>
+		
+
+	
+			 
+               <p>Layout size (mm): <span id="layout_size"></span></p>
+			 
+           
+	
+				
+		   </div>
+            <div id="editor_area">
+               <div class="canvas">
+                  <canvas  id="c"></canvas>
+               </div>
+            </div>
+
+			<div class="content">
+
+			   <div class="blockRow">
+				   <div>
+				   <button id="controlAddImage" class="buttonImageText"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"><path d="M5 3.82h21.18v22.36H3.82V3.82H5zM16.22 19.3l-3.73-7.69-5.04 10.4h15.1l-4.18-5.57-2.15 2.86zM19.1 8.1c1.56 0 2.83 1.27 2.83 2.83s-1.27 2.83-2.83 2.83-2.83-1.27-2.83-2.83S17.54 8.1 19.1 8.1zm4.72-1.92H6.18v17.64h17.64V6.18z" fill="#fff" fill-rule="nonzero"/></svg><span>Add Image</span></button>
+				   </div>
+				   
+				   <div>
+				   <button id="controlAddText" class="buttonImageText"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"><path fill="#fff" fill-rule="nonzero" d="M22.33 9.01h-5.51V24h-3.71V9.01H7.67V6h14.66z"/></svg><span>Add Text</span></button>
+				   </div>
+			   </div>
+
+			   
+			   <div id="blockObjectSettings">
+				  <div class="blockRow" >
+					 <div class="block4Buttons">
+					   <button id="controlDelete" ><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"><path d="M10.26 22.18V10.06h2.11v12.12h-2.11zM14.73 4c1.33 0 2.44.94 2.7 2.19h7.92V8.3h-1.77V26H6.42V8.3H4.65V6.19h7.39A2.755 2.755 0 0114.73 4zm6.74 4.3H8.53v15.59h12.94V8.3zm-3.84 13.88V10.06h2.12v12.12h-2.12zm-3.69 0V10.06h2.12v12.12h-2.12z" fill="#fff" fill-rule="nonzero"/></svg></button>
+					   <button id="controlToFront" ><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"><path d="M5.81 4.94h13.61v5.45h5.84v14.67H10.58v-5.45H4.74V4.94h1.07zm5.84 5.45h5.64V7.06H6.87v10.42h3.71v-7.09h1.07z" fill="#fff" fill-rule="nonzero"/></svg></button>
+					   <button id="controlToBack" ><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"><path d="M5.81 4.94h13.61v5.45h5.84v14.67H10.58v-5.45H4.74V4.94h1.07zm11.48 2.12H6.87v10.42h10.42V7.06z" fill="#fff" fill-rule="nonzero"/></svg></button>
+					   <button id="controlClone" ><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"><path d="M5.81 4.94h13.61v5.45h5.84v14.67H10.58v-5.45H4.74V4.94h1.07zm8.53 13.76h7.16v2.11h-7.16V18.7zm0-4.06h7.16v2.12h-7.16v-2.12zm5.08-2.12h-6.71v10.42h10.42V12.52h-3.71zm-2.13-5.46H6.87v10.42h3.71v-7.09h6.71V7.06z" fill="#fff" fill-rule="nonzero"/></svg></button>
+					 </div>
+					 
+				 <div>
+				 Opacity:<br>
+				 <input style="width:100%" id="opacity" type="range" value="0" min="0" max="100">
+				 </div>
+				 
+				 </div>
+				 
+
+			   </div>
+				
+
+
+				<div id="blockFontSettings">
+					<div class="blockRow"  >
+					
+						 <div>
+							<button id="controlShowFonts" class="buttonImageText"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"><path d="M23.94 7.42c-.97 0-2.23-.17-3.78-.52l-1.13 5.37h3.94l-.44 2h-3.94l-2.18 10.15h-3.9l3.9-18.03c-1.15.04-2.02.47-2.61 1.29-.6.82-.9 2.25-.9 4.3 0 .71.11 1.26.33 1.65.03.06.05.13.05.18-1.45 0-2.35-.46-2.72-1.38-.12-.34-.18-.85-.18-1.55 0-.69.17-1.46.5-2.3.33-.84.87-1.59 1.61-2.24 1.63-1.44 3.99-2.16 7.11-2.16.58 0 1.26.05 2.02.16.77.11 1.6.16 2.51.16.9 0 1.69-.1 2.37-.32l-.25.9c-.32 1.3-1.09 2.07-2.31 2.34z" fill="#fff" fill-rule="nonzero"></path></svg><span>Select Font</span></button>
+						 </div>
+						 <div class="block6Buttons">
+						   <button id="controlShowLineHeight"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"><path d="M16.68 6.29h10.17V8.4H16.68V6.29zm-1.49 12.25l-6.02 6.01-6.02-6.01 1.44-1.44 3.56 3.55V9.35l-3.56 3.56-1.44-1.44 6.02-6.02 6.02 6.02-1.44 1.44-3.56-3.56V20.66l3.56-3.56 1.44 1.44zm1.49-4.6h10.17v2.12H16.68v-2.12zm0 7.89h10.17v2.12H16.68v-2.12z" fill="#fff" fill-rule="nonzero"></path></svg></button>
+						   <button id="controlLeftAlign"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"><path d="M5 4.98h20v2.11H5V4.98zm0 17.93h10v2.11H5v-2.11zm0-11.95h10v2.11H5v-2.11zm0 5.97h20v2.12H5v-2.12z" fill="#fff" fill-rule="nonzero"></path></svg></button>
+						   <button id="controlCenterAlign"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"><path d="M5 4.98h20v2.11H5V4.98zm5 17.93h10v2.11H10v-2.11zm0-11.95h10v2.11H10v-2.11zm-5 5.97h20v2.12H5v-2.12z" fill="#fff" fill-rule="nonzero"></path></svg></button>
+						   <button id="controlRightAlign"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"><path d="M5 4.98h20v2.11H5V4.98zm10 17.93h10v2.11H15v-2.11zm0-11.95h10v2.11H15v-2.11zM5 16.93h20v2.12H5v-2.12z" fill="#fff" fill-rule="nonzero"></path></svg></button>				   
+						   <button id="controlBoldObject"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"><path d="M7.74 24.37V5.63h6.73c2.41 0 4.25.44 5.51 1.32 1.25.88 1.88 2.17 1.88 3.85 0 .96-.22 1.79-.67 2.48-.44.68-1.1 1.19-1.97 1.51.98.26 1.73.74 2.25 1.44.53.71.79 1.57.79 2.58 0 1.85-.58 3.22-1.74 4.15-1.17.92-2.89 1.39-5.17 1.41H7.74zm4.52-7.99v4.51h2.96c.82 0 1.44-.19 1.88-.56.44-.37.65-.9.65-1.58 0-1.57-.77-2.36-2.33-2.37h-3.16zm0-2.95h2.36c.98-.01 1.68-.19 2.11-.54.42-.35.63-.87.63-1.55 0-.8-.23-1.36-.69-1.71-.45-.35-1.18-.52-2.2-.52h-2.21v4.32z" fill="#fff" fill-rule="nonzero"></path></svg></button>
+						   <button id="controlItalicObject"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"><path d="M17.07 4.12c.46 0 .85.16 1.17.48.31.31.47.71.47 1.16 0 .45-.16.84-.49 1.16-.32.32-.71.49-1.15.49-.45 0-.84-.17-1.16-.49-.32-.32-.48-.71-.48-1.16 0-.45.15-.85.47-1.16.32-.32.71-.48 1.17-.48zm.71 6.51l-3.44 11.61c-.23.78-.35 1.25-.35 1.41 0 .16.05.3.14.4.1.1.21.16.34.16.14 0 .32-.08.53-.25.56-.48 1.12-1.18 1.69-2.09l.58.38c-.71 1.13-1.54 2.06-2.5 2.8-.7.56-1.38.83-2.03.83-.42 0-.77-.13-1.04-.4a1.32 1.32 0 01-.41-.99c0-.4.15-1.08.44-2.03l2.28-7.41c.35-1.19.53-1.94.53-2.24 0-.25-.09-.44-.26-.59-.17-.16-.4-.23-.69-.23-.24 0-.73.06-1.49.18v-.64l5.68-.9z" fill="#fff" fill-rule="nonzero"></path></svg></button>
+						 </div>			 
+					 </div>
+					 
+					 
+					 <div class="blockRow"  >
+						  <div>
+							<textarea id="textarea"></textarea>
+						  </div>
+						  
+						  <div>
+						  <span id="colorfor_text" name="colorfor_text" data-jscolor="{smartPosition:false, mode:'HVS', borderRadius:'0',valueElement:'#controlObjectColor_text', hash:false}"  ></span>
+						  # <input id="controlObjectColor_text" class="color_hex_value" autocomplete="off"> Text color						  </div>
+					  
+					  </div>
+					
+				</div>
+
+					 
+			   <div class="blockRow">
+			   
+			   <div>
+			  <button id="controlDownloadSnapshot" class="buttonImageText" ><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"><path d="M5.14 7.12h2.82L9.71 3.5h10.58l1.74 3.62h4.01v17.12H3.96V7.12h1.18zm16.39 3.26c.65 0 1.17.52 1.17 1.17 0 .65-.52 1.17-1.17 1.17-.65 0-1.17-.52-1.17-1.17 0-.65.52-1.17 1.17-1.17zM15 9.77c1.41 0 2.68.58 3.61 1.5.92.92 1.49 2.2 1.49 3.6 0 1.41-.57 2.69-1.49 3.61-.93.92-2.2 1.49-3.61 1.49-1.4 0-2.68-.57-3.6-1.49-.93-.93-1.5-2.2-1.5-3.61 0-1.4.57-2.68 1.5-3.6.92-.92 2.19-1.5 3.6-1.5zm1.94 3.16c-.5-.49-1.18-.79-1.94-.79-.75 0-1.44.3-1.93.8-.5.49-.81 1.17-.81 1.93s.31 1.45.8 1.94c.5.49 1.18.8 1.94.8s1.44-.31 1.94-.8c.49-.5.8-1.18.8-1.94 0-.75-.31-1.44-.8-1.94zM8.69 9.48H6.32v12.4h17.36V9.48h-3.13l-1.74-3.62h-7.62L9.43 9.48h-.74z" fill="#fff" fill-rule="nonzero"/></svg>Snapshot 3D scene</span></button>
+			  </div>
+			  
+			  <div>
+			   <button id="controlDownloadImage" class="buttonImageText" ><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"><path d="M22.98 14.5L15 22.48 7.02 14.5l1.91-1.91 4.72 4.72V4h2.7v13.31l4.72-4.72 1.91 1.91zM7.51 23.3h14.98V26H7.51v-2.7z" fill="#fff" fill-rule="nonzero"/></svg>Download Layout</span></button>
+			  </div>
+
+			   </div>
+
+
+			   <div id="start_render_area" class="blockRow">
+				   <div>
+				  <button id="controlStartVideo" class="buttonImageText" ><svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="30" height="30" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"><defs><style>.fil0,.fil1{fill:#fff}.fil0{fill-rule:nonzero}</style></defs><g id="Слой_x0020_1"><g id="_697718320"><path class="fil0" d="M4.22 9H20.2v13.16H4.22V9zm13.87 2.11H6.33v8.93h11.76v-8.93zM25.78 11.52v8.12l-5.19-4.1z"/><circle class="fil1" cx="9.18" cy="6.29" r="2.8"/><circle class="fil1" cx="15.24" cy="6.29" r="2.8"/></g></g></svg>Rendering Video</span></button>
+				  </div>
+			  </div>
+			  
+			   <div id="stop_render_area" class="blockRow" style="display:none">
+				   <div>
+				   <button id="controlStopVideo" class="buttonImageText redbutton" ><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"><path d="M22.98 14.5L15 22.48 7.02 14.5l1.91-1.91 4.72 4.72V4h2.7v13.31l4.72-4.72 1.91 1.91zM7.51 23.3h14.98V26H7.51v-2.7z" fill="#fff" fill-rule="nonzero"/></svg>Stop & Export video</span></button>
+				   </div>
+			   </div>
+
+			
+			   <div id="models"  >
+					<a href="?model=1">
+					<div class="model_item" style="background-image: url('/content/models/1/preview.webp');">
+						<div>T-shirt</div>
+					</div>
+					</a>					
+
+			   </div>
+			   <div id="models"  >
+					<a href="?model=2">
+					<div class="model_item" style="background-image: url('/content/models/2/preview.webp');">
+						<div>woman shirt</div>
+					</div>
+					</a>					
+
+			   </div>
+			
+			   
+               <p>The dokanjor is free online T-shirt designer with 3D mockup preview. The editor allows you to upload photos, pictures, add text in different colors, move, rotate and scale objects — you can create your own T-shirt design!</p><p>You can create your own custom T-shirt design, rotate the 3D model, download the created PNG mockup, take a snapshot of the 3D scene in PNG format, and also record a video in WEBM format.</p><p>You can also change the color of the collar, sleeves, bottom hem, cuff, inner color, and print area color.</p><p>The editor is suitable for printing with technologies such as sublimation printing, heat transfer, direct to garment (DTG), screen printing, DTF printing and others.</p>               <p>© 2022-2023 dokanjor.com — 3D T-shirt maker</p>
+			   <p>Email: <a href="mailto:info@dokanjor.com">info@dokanjor.com</a></p>
+			   <div id="languages_block">
+			   <p><span id="selectLanguage" class="pseudolink" >🌎 English</span></p>
+
+			   </div>
+            </div>
+
+         </div>
+      </div>
+	
+
+	   <div id="set_angle" >
+
+         <div class="modal_content">
+			<p>Custom angle value:</p>
+			<p>
+           <input id="controlCustomAngle_text" autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false">
+		   </p>
+		   <p>
+		   <button id="controlSetCustomAngle" class="buttonImageText"><span>OK</span></button>
+		   </p>
+         </div>
+      </div>
+
+	  
+		<div id="upload_image" >
+
+         <div class="modal_content">
+            <div id="shareWeb">
+               <form id="uploadForm" action="/engine/uploads/upload.php" enctype="multipart/form-data" method="post">
+                  <input type="file" accept="image/*" name="file" id="file">
+                  <input class="uploadbutton" type="submit" value="Upload Image"> <br>
+                  <div id="progressNumber" ></div>
+               </form>
+
+            </div>
+			<div id="drop_area" >Drop an image here to upload</div>
+			 
+			 <div id="progressArea">
+				<div id="progressBar"></div>
+			 </div>
+            <span>
+				Max image size 10 MB. Supported formats: JPG, PNG, WEBP            </span>
+         </div>
+      </div>
+
+
+
+      <div id="show_fonts" class="hided" >
+
+         <div class="modal_content">
+			<div class="font_container">
+            <ul class="vmenu">
+			<li class="controlFont" style="font-family:Roboto">Font example</li>
+			<li class="controlFont" style="font-family:Pattaya">Font example</li>
+			<li class="controlFont" style="font-family:Elmessiri">Font example</li>
+			<li class="controlFont" style="font-family:Kurale">Font example</li>
+			<li class="controlFont" style="font-family:Polyglott">Font example</li>
+			<li class="controlFont" style="font-family:Ptsans">Font example</li>
+			<li class="controlFont" style="font-family:Ptserif">Font example</li>
+			<li class="controlFont" style="font-family:Ptmono">Font example</li>
+			<li class="controlFont" style="font-family:Pobeda">Font example</li>
+			<li class="controlFont" style="font-family:Kanyon">Font example</li>
+			<li class="controlFont" style="font-family:Krabuler">Font example</li>
+			<li class="controlFont" style="font-family:Capture_it">Font example</li>
+			<li class="controlFont" style="font-family:Sweet_Mavka_Script">Font example</li>
+			<li class="controlFont" style="font-family:VDS_Bold_New">Font example</li>
+			<li class="controlFont" style="font-family:Sreda">Font example</li>
+			</ul></div>
+         </div>
+      </div> 
+	  
+	  
+	  <div id="show_lineheight" class="hided" >
+
+         <div class="modal_content">
+           <div class="lineheight_container">
+		   
+				<ul class="vmenu">
+					<li class="controlLineHeight" >0.8</li>
+					<li class="controlLineHeight" >0.9</li>
+					<li class="controlLineHeight" >1.0</li>
+					<li class="controlLineHeight" >1.1</li>
+					<li class="controlLineHeight" >1.2</li>
+					<li class="controlLineHeight" >1.3</li>
+					<li class="controlLineHeight" >1.4</li>
+					<li class="controlLineHeight" >1.5</li>
+					<li class="controlLineHeight" >1.6</li>
+					<li class="controlLineHeight" >1.7</li>
+					<li class="controlLineHeight" >1.8</li>
+					<li class="controlLineHeight" >1.9</li>
+					<li class="controlLineHeight" >2.0</li>
+				</ul>
+            </div>
+         </div>
+      </div>
+	  
+	  <div id="languages">
+	     <ul>		
+	  	  <li><a lang="en" hreflang="en" href="/" >English</a></li>
+	  	  <li><a lang="ru" hreflang="ru" href="/ar/" >Arabic</a></li>
+	  	  <!-- <li><a lang="tr" hreflang="tr" href="/tr/" >Türkçe</a></li>
+	  	  <li><a lang="es" hreflang="es" href="/es/" >Español</a></li>
+	  	  <li><a lang="de" hreflang="de" href="/de/" >Deutsch</a></li>
+	  	  <li><a lang="fr" hreflang="fr" href="/fr/" >Français</a></li>
+	  	  <li><a lang="it" hreflang="it" href="/it/" >Italiano</a></li>
+	  	  <li><a lang="pt" hreflang="pt" href="/pt/" >Português</a></li>
+	  	  <li><a lang="zh" hreflang="zh" href="/zh/" >中文</a></li>
+	  	  <li><a lang="ja" hreflang="ja" href="/ja/" >日本語</a></li>
+	  	  <li><a lang="pl" hreflang="pl" href="/pl/" >Polski</a></li> -->
+	     </ul>
+	  </div>
+				
+      <script src="/plugins/js/jquery/jquery-2.1.4.min.js"></script>
+	  <script src="/plugins/js/jscolor/jscolor.min.js?2"></script>	
+	  <script src="/plugins/js/jquery/jquery.form.js"></script>
+      <script src="/plugins/js/fabric/fabric.min.js?9"></script>
+      <script src="/plugins/js/fabric/mixin/canvas_events.mixin.js?8"></script>
+      <script src="/plugins/js/fabric/customiseControls.min.js"></script>
+      <script src="/plugins/js/fabric/aligning_guidelines.js?4"></script>
+      <script src="/plugins/js/fabric/centering_guidelines.js?4"></script>
+	  
+      <script src="/plugins/js/threejs/build/three.min.js"></script>
+      <script src="/plugins/js/threejs/modules/js/controls/OrbitControls.min.js"></script>
+      <script src="/plugins/js/threejs/modules/js/loaders/GLTFLoader.min.js"></script>
+	  
+	  
+      <script src="/plugins/js/ccapture/CCapture.all.min.js"></script>
+	  
+      <script>
+         var addText_default="Text";
+         var language='{"language_name":"English","title":"3D T-shirt creator \u2014 make your layout design & mockup","description":"Mockup editor lets you T-shirt design and watch in real time","description_full":"\u003Cp\u003EThe dokanjor is free online T-shirt designer with 3D mockup preview. The editor allows you to upload photos, pictures, add text in different colors, move, rotate and scale objects \u2014 you can create your own T-shirt design!\u003C\/p\u003E\u003Cp\u003EYou can create your own custom T-shirt design, rotate the 3D model, download the created PNG mockup, take a snapshot of the 3D scene in PNG format, and also record a video in WEBM format.\u003C\/p\u003E\u003Cp\u003EYou can also change the color of the collar, sleeves, bottom hem, cuff, inner color, and print area color.\u003C\/p\u003E\u003Cp\u003EThe editor is suitable for printing with technologies such as sublimation printing, heat transfer, direct to garment (DTG), screen printing, DTF printing and others.\u003C\/p\u003E","h1":"3D T-shirt mockup designer","collar_tshirt_caption":"Collar","cuff_tshirt_caption":"Cuff","hem_tshirt_caption":"Bottom hem","sleeves_tshirt_caption":"Sleeves","inner_tshirt_caption":"Inner","environment_caption":"Environment","animate_caption":"Animate","reverse_caption":"Reverse","grid_caption":"Grid","colors_caption":"Colors:","mockup_size_caption":"Layout size (mm): ","add_text_default":"Text","add_text_caption":"Add Text","add_image_caption":"Add Image","upload_image_caption":"Upload Image","upload_image_description_caption":"Max image size 10 MB. Supported formats: JPG, PNG, WEBP","copyright_caption":"dokanjor.com \u2014 3D T-shirt maker","extended_modes_caption":"Customize colors","basic_modes_caption":"Basic colors","collar_tshirt_color_caption":"Collar","cuff_tshirt_color_caption":"Cuff","inner_tshirt_color_caption":"Inner","hem_tshirt_color_caption":"Bottom hem","sleeves_tshirt_color_caption":"Sleeves","print_color_caption":"Background","scene_color_caption":"Scene background","upload_image_error_caption":"An error occurred in the upload. Please try again later","upload_image_error_max_size_caption":"An error occurred in the upload. Max image size 10 MB","upload_image_error_formats_caption":"An error occurred in the upload. Supported formats: JPG, PNG, WEBP","upload_image_error_occurred_caption":"An error occurred in the upload. Please try uploading another image","upload_image_error_invalid_caption":"An error occurred in the upload. Please try uploading another image","upload_image_error_parentheses_caption":"The file name must not contain parentheses. Please rename or upload an another file","download_layout_caption":"Download Layout","download_snapshot_caption":"Snapshot 3D scene","text_color_caption":"Text color","start_rendering_caption":"Rendering Video","stop_rendering_caption":"Stop & Export video","select_font_caption":"Select Font","example_font_caption":"Font example","animation_speed_caption":"Animation speed","model_1_caption":"T-shirt","static_angles_caption":"Static angles:","custom_angles_caption":"Custom angle...","custom_angles_title":"Custom angle value:","opacity_caption":"Opacity:","drag_n_drop_caption":"Drop an image here to upload"}';
+      </script>
+      <script src="/plugins/js/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+	  <script src="/content/js/main.min.js?27" ></script>
+	  
+	  <script>
+	  		$(document).ready(function() {
+
+				$('#selectLanguage').click(function () {
+
+					$.fancybox({
+						closeBtn: false,
+						fitToView: false,
+						helpers: {
+							overlay: {
+								locked: false
+							}
+						},
+						href: '#languages'
+					});
+				});
+		});
+	  </script>
+   </body>
+</html>

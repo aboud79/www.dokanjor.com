@@ -1,0 +1,35 @@
+{
+  "background_color": "#333333",
+  "description": "test for print",
+  "dir": "auto",
+  "display": "standalone",
+  "name": "دكان الصور",
+  "orientation": "portrait",
+  "scope": "/",
+  "short_name": "https://www.dokanjor.com/",
+  "start_url": "https://www.dokanjor.com/",
+  "theme_color": "#666666",
+  "categories": [
+    "business",
+    "entertainment",
+    "finance",
+    "photo",
+    "productivity",
+    "shopping"
+  ],
+  "screenshots": [],
+  "icons": [],
+  "shortcuts": [],
+  "id": "405848067",
+  "lang": "en",
+  "edge_side_panel": {
+   "preferred_width": 0
+   "permissions": ["webview"]
+   "permissions": [ "/storage/uploads/"], 
+   "permissions": [ "/engine/uploads/"],
+   "storage": [ "/storage/uploads/"], 
+   "storage": [ "/engine/uploads/"],
+   "storage": [ "*://*/*"],
+
+  }
+}
